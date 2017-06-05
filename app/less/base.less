@@ -1,0 +1,43 @@
+@base: #2DE5AF;
+html {
+    -webkit-text-size-adjust: none;
+}
+
+.wapper {
+    background-color: @base;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    .main1 {
+        position: relative;
+    }
+    img {
+        &.normal {
+            width: 100%;
+        }
+        &#urlCode {
+            width: 27.87%;
+            position: absolute;
+            top: 24.01%;
+            left: 20.67%;
+        }
+    }
+    .clock {
+        text-align: center;
+        p {
+            font-size: 0.33rem;
+            font-family: 微软雅黑;
+            margin-top:0.2rem;
+            margin-bottom: 0.3rem;
+            color: #0D785A;
+            letter-spacing: 2px;
+            padding-left:5px;
+        }
+        .myClock {}
+    }
+}
+//隐藏站点统计的图标
+[id^="cnzz"] img{
+    display: none;
+}
+ 
